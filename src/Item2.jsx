@@ -145,7 +145,7 @@ function Item2({ location }) {
           </>
         )}
       </div>
-          <Item3 icon/>
+          <Item3 />
     </>
   );
 }

@@ -12,6 +12,7 @@
   grid-template-columns: 10px repeat(4,1fr) 10px ;
   grid-template-rows:repeat(5,1fr);
   gap:10px;
+   overflow:scroll;
 }
 
 
@@ -261,12 +262,14 @@ background-size: cover;
   .grid-container {
     display:flex;
     flex-direction: column;
+    overflow:scroll;
   }
 }
 @media (max-width: 800px) {
   .bg[style] {
     background-size:contain;
       background-repeat:repeat-y;
+      background-attachment: fixed;
   }
 } 
 @media (max-width: 800px) {

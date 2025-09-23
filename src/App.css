@@ -253,19 +253,20 @@ button:hover {
   color:black;
 }
 .bg[style]{
- background-size:cover;
+background-size: cover;
+
 }
 
 @media (max-width: 800px) {
   .grid-container {
     display:flex;
     flex-direction: column;
-
   }
 }
 @media (max-width: 800px) {
   .bg[style] {
- background-repeat:repeat-y;
+    background-size:contain;
+      background-repeat:repeat-y;
   }
 } 
 @media (max-width: 800px) {

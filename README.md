@@ -1,1 +1,1 @@
-# weatherapp created using REACTJS
+# weatherapp created using API and REACTJS

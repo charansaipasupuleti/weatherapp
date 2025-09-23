@@ -1,0 +1,259 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.grid-container{
+  display:grid;
+  height:100vh;
+  width:100vw;
+  grid-template-columns: 10px repeat(4,1fr) 10px ;
+  grid-template-rows:repeat(5,1fr);
+  gap:10px;
+}
+
+.item1{
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border-radius: 8px;
+  display:flex;
+  flex-direction: row;
+  
+}
+.subitem1{
+  margin:2px;
+  display:flex;
+  flex-direction: row;
+  
+}
+.searchbox{
+height:40px;
+background-color:transparent;
+color:black;
+border-radius:8px;
+ border-top-right-radius: 8px;
+ border-bottom-right-radius: 8px;
+}
+.searchbar{
+ background-color:transparent;
+ border:1px solid white;
+ height:40px;
+ width: 400px;
+ border-radius: 8px;
+
+
+
+}
+.citytemp{
+  margin-left:1px;
+  height:40px;
+  width:200px;
+  font-size:smaller;
+border-radius:10px;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+  background-color:rgba( 225, 225, 225, 0.5);
+   backdrop-filter: blur(10px);
+
+}
+
+button{
+   background-color:transparent;
+  height:40px;
+  color:black;
+  font-size:smaller;
+  border:1px solid white;
+ 
+}
+button:hover {
+  border:1px solid white;
+}
+.heading{
+  margin-left:20px;
+    margin-top:10px;
+  width:150px;
+  color:black;
+
+}
+.item2{
+  grid-row-start:2;
+  grid-row-end:5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: 10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color:transparent;
+  font-size:small;
+  gap:2px;
+  padding:20px;
+   /* background-color:rgba( 225, 225, 225, 0.096 );
+   backdrop-filter: blur(80px); */
+  /* border:1px solid white; */
+  box-shadow: 2px 2px 15px whitesmoke;
+}
+
+
+.body1{
+  grid-row-start:1;
+  grid-row-end:1;
+  grid-column-start:1;
+  grid-column-end:4;
+   font-size: large;
+   align-self: center;
+}
+.body2{
+  grid-row-start:2;
+  grid-row-end:3;
+  grid-column-start:1;
+  grid-column-end:3;
+}
+.body3{
+    grid-row-start:2;
+  grid-row-end:3;
+  grid-column-start:3;
+  grid-column-end:4;
+  font-size: 50px;
+  align-self:center;
+}
+.body4{
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+.body5{
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:2;
+  grid-column-end:3;
+}
+.body6{
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end:4;
+}
+.body7{
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+.body8{
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:2;
+  grid-column-end:4;
+}
+/* .body9{
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:3;
+  grid-column-end:4;
+} */
+.bodyicon img{
+  height:100px;
+ 
+}
+ .item3{
+  grid-row-start:2;
+  grid-row-end:5;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  border-radius: 8px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows: auto auto;
+  gap:20px;
+
+}
+
+.day{
+  border-radius: 10px;
+    /* background-color:rgba(225, 225, 225, 0.096);
+   backdrop-filter: blur(80px); */
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:repeat(3,auto);
+  padding:10px;
+  /* border:1px solid white; */
+   box-shadow: 2px 2px 10px whitesmoke;
+}
+.dailydate{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end:2;
+ 
+}
+.dailyday{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end:3;
+  justify-self: center;
+}
+.dailyicon{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end:2;
+  justify-self: center;
+  
+}
+.dailydescription{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end:3;
+  justify-self: center;
+  align-self:center;
+  
+}
+.dailyicon img{
+  height:100px;
+  width:100px;
+}
+.dailymax{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end:2;
+  justify-self: center;
+  font-size: small;
+}
+.dailymin{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end:3;
+  justify-self: center;
+   font-size: small;
+}
+.item4{
+  
+   grid-row-start:5;
+  grid-row-end:6;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border-radius: 8px;
+ 
+}
+.item{
+  color:black;
+}
+.bg{
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  /* background-size: contain; */
+
+ 
+}

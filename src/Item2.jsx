@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Item3 from './Item3.jsx';
+// import Item3 from './Item3.jsx';
 
 function Item2({ location }) {
   const [weatherData, setWeatherData] = useState({
@@ -145,7 +145,7 @@ function Item2({ location }) {
           </>
         )}
       </div>
-          <Item3 />
+         
     </>
   );
 }

@@ -2,7 +2,7 @@ import {useState} from 'react';
 import './App.css';
 import Item1 from './Item1.jsx';
 import Item2 from './Item2.jsx';
-// import Item3 from './Item3.jsx';
+import Item3 from './Item3.jsx';
 import image1 from './assets/bodybackground1.jpg';
  import image2 from './assets/bodybackground2.jpg';
 
@@ -51,7 +51,7 @@ function App() {
        
       <Item2 location={location} /> 
       
-   
+       <Item3 />
        
       </div>  
     </div>

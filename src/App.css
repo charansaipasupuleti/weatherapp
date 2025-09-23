@@ -14,6 +14,7 @@
   gap:10px;
 }
 
+
 .item1{
   grid-row-start:1;
   grid-row-end:2;
@@ -30,14 +31,14 @@
   flex-direction: row;
   
 }
-.searchbox{
+/* .searchbox{
 height:40px;
 background-color:transparent;
 color:black;
 border-radius:8px;
  border-top-right-radius: 8px;
  border-bottom-right-radius: 8px;
-}
+} */
 .searchbar{
  background-color:transparent;
  border:1px solid white;
@@ -187,6 +188,7 @@ button:hover {
   /* border:1px solid white; */
    box-shadow: 2px 2px 10px whitesmoke;
 }
+
 .dailydate{
   grid-row-start: 1;
   grid-row-end: 2;
@@ -250,10 +252,53 @@ button:hover {
 .item{
   color:black;
 }
-.bg{
-  background-repeat: no-repeat;
-  background-attachment:fixed ;
-  /* background-size: contain; */
+.bg[style]{
+ background-size:cover;
+}
 
- 
+@media (max-width: 800px) {
+  .grid-container {
+    display:flex;
+    flex-direction: column;
+
+  }
+}
+@media (max-width: 800px) {
+  .bg[style] {
+ background-repeat:repeat-y;
+  }
+} 
+@media (max-width: 800px) {
+  .item1 {
+   display:flex;
+    flex-direction: column;
+  }
+} 
+@media (max-width: 800px) {
+  .subitem1 {
+   display:flex;
+    flex-direction: column;
+  }
+} 
+@media (max-width: 800px) {
+  button,.citytemp {
+width:100%;
+  }
+}
+@media (max-width: 800px) {
+.searchbar {
+width:100%;
+}
+}
+@media (max-width: 800px) {
+.heading{
+align-self:center;
+  }
+}
+
+@media (max-width: 800px) {
+.item3{
+ display:flex;
+    flex-direction: column;
+  }
 }
